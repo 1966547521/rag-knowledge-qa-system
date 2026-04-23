@@ -1,0 +1,58 @@
+2026-04-23 11:09:36,530 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 11:09:36,530 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 当前消息列表：扫地机器人在我所在的地区的气温下如何保养
+2026-04-23 11:11:48,748 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 11:11:48,748 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 当前消息列表：扫地机器人在我所在的地区的气温下如何保养
+2026-04-23 11:11:51,364 - agent - INFO - middleware.py:20 - [tool monitor]执行工具：get_user_location
+2026-04-23 11:11:51,364 - agent - INFO - middleware.py:21 - [tool monitor]工具参数：{}
+2026-04-23 11:11:51,364 - agent - INFO - middleware.py:24 - [tool monitor]工具get_user_location调用成功
+2026-04-23 11:11:51,365 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-04-23 11:11:51,365 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 当前消息列表：长沙
+2026-04-23 11:11:53,565 - agent - INFO - middleware.py:20 - [tool monitor]执行工具：get_weather
+2026-04-23 11:11:53,566 - agent - INFO - middleware.py:21 - [tool monitor]工具参数：{'city': '长沙'}
+2026-04-23 11:11:53,567 - agent - INFO - middleware.py:24 - [tool monitor]工具get_weather调用成功
+2026-04-23 11:11:53,567 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有5条消息。
+2026-04-23 11:11:53,567 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 当前消息列表：城市长沙天气为晴天，气温23度
+2026-04-23 11:11:56,862 - agent - INFO - middleware.py:20 - [tool monitor]执行工具：rag_summarize_service
+2026-04-23 11:11:56,863 - agent - INFO - middleware.py:21 - [tool monitor]工具参数：{'query': '扫地机器人在23度晴天环境下的保养方法'}
+2026-04-23 11:11:58,370 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize_service调用成功
+2026-04-23 11:11:58,370 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有7条消息。
+2026-04-23 11:11:58,371 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 当前消息列表：参考资料中未提及扫地机器人在23度晴天环境下的具体保养方法。
+2026-04-23 11:13:24,168 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 11:13:24,168 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 当前消息列表：扫地机器人在我所在的地区的气温下如何保养
+2026-04-23 11:13:26,717 - agent - INFO - middleware.py:20 - [tool monitor]执行工具：get_user_location
+2026-04-23 11:13:26,717 - agent - INFO - middleware.py:21 - [tool monitor]工具参数：{}
+2026-04-23 11:13:26,718 - agent - INFO - middleware.py:24 - [tool monitor]工具get_user_location调用成功
+2026-04-23 11:13:26,718 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-04-23 11:13:26,718 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 当前消息列表：上海
+2026-04-23 11:13:28,531 - agent - INFO - middleware.py:20 - [tool monitor]执行工具：get_weather
+2026-04-23 11:13:28,531 - agent - INFO - middleware.py:21 - [tool monitor]工具参数：{'city': '上海'}
+2026-04-23 11:13:28,531 - agent - INFO - middleware.py:24 - [tool monitor]工具get_weather调用成功
+2026-04-23 11:13:28,532 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有5条消息。
+2026-04-23 11:13:28,532 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 当前消息列表：城市上海天气为晴天，气温23度
+2026-04-23 11:13:31,200 - agent - INFO - middleware.py:20 - [tool monitor]执行工具：rag_summarize_service
+2026-04-23 11:13:31,201 - agent - INFO - middleware.py:21 - [tool monitor]工具参数：{'query': '扫地机器人在23度晴天环境下的保养方法'}
+2026-04-23 11:13:32,393 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize_service调用成功
+2026-04-23 11:13:32,394 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有7条消息。
+2026-04-23 11:13:32,394 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 当前消息列表：参考资料中未提及扫地机器人在23度晴天环境下的具体保养方法。
+2026-04-23 11:16:44,401 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 11:16:44,402 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 当前消息列表：扫地机器人在我所在的地区的气温下如何保养
+2026-04-23 11:16:47,070 - agent - INFO - middleware.py:20 - [tool monitor]执行工具：get_user_location
+2026-04-23 11:16:47,070 - agent - INFO - middleware.py:21 - [tool monitor]工具参数：{}
+2026-04-23 11:16:47,070 - agent - INFO - middleware.py:24 - [tool monitor]工具get_user_location调用成功
+2026-04-23 11:16:47,071 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-04-23 11:16:47,071 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 当前消息列表：南京
+2026-04-23 11:16:49,682 - agent - INFO - middleware.py:20 - [tool monitor]执行工具：get_weather
+2026-04-23 11:16:49,682 - agent - INFO - middleware.py:21 - [tool monitor]工具参数：{'city': '南京'}
+2026-04-23 11:16:49,683 - agent - INFO - middleware.py:24 - [tool monitor]工具get_weather调用成功
+2026-04-23 11:16:49,684 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有5条消息。
+2026-04-23 11:16:49,684 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 当前消息列表：城市南京天气为晴天，气温23度
+2026-04-23 11:16:53,175 - agent - INFO - middleware.py:20 - [tool monitor]执行工具：rag_summarize_service
+2026-04-23 11:16:53,175 - agent - INFO - middleware.py:21 - [tool monitor]工具参数：{'query': '扫地机器人在23度晴天环境下的保养方法'}
+2026-04-23 11:16:55,649 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize_service调用成功
+2026-04-23 11:16:55,650 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有7条消息。
+2026-04-23 11:16:55,650 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 当前消息列表：参考资料中未提及扫地机器人在23度晴天环境下的具体保养方法。
+2026-04-23 11:16:58,673 - agent - INFO - middleware.py:20 - [tool monitor]执行工具：rag_summarize_service
+2026-04-23 11:16:58,673 - agent - INFO - middleware.py:21 - [tool monitor]工具参数：{'query': '扫地机器人常温环境保养方法'}
+2026-04-23 11:17:02,114 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize_service调用成功
+2026-04-23 11:17:02,114 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有9条消息。
+2026-04-23 11:17:02,114 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 当前消息列表：扫地机器人在常温环境下的保养方法包括：定期清理尘盒和滤网，避免灰尘堆积影响吸力；检查并清理滚刷和边刷上的缠绕物；保持传感器清洁，防止误判；确保充电座周围无障碍物，维持正常充电；长期不用时应断电存放于干燥处。
