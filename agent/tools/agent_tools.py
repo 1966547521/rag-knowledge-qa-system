@@ -13,19 +13,34 @@ month_arr = ["2025-01", "2025-02", "2025-03", "2025-04", "2025-05", "2025-06",
 
 external_data = {}
 
+_user_city = None
+
+
+def set_user_city(city: str):
+    global _user_city
+    _user_city = city
+
 
 @tool(description='从向量存储中检索参考资料')
 def rag_summarize_service(query: str) -> str:
     return rag.rag_summarize(query)
 
 
-@tool(description='获取指定城市的天气，并以消息字符串的形式返回')
+@tool(description='获取指定城市的实时天气，返回天气描述信息字符串')
 def get_weather(city: str) -> str:
-    return f"城市{city}天气为晴天，气温23度"
+    from utils.geo_location import fetch_weather
+    return fetch_weather(city)
 
 
-@tool(description='获取用户所在城市名称，以纯字符串的形式返回')
+@tool(description='获取用户所在城市名称，优先使用手动输入的城市和IP定位，以纯字符串的形式返回')
 def get_user_location() -> str:
+    global _user_city
+    if _user_city:
+        return _user_city
+    from utils.geo_location import get_city_name
+    city = get_city_name()
+    if city:
+        return city
     return random.choice(["长沙", "上海", "南京"])
 
 

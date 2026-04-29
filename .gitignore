@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+logs/
+chroma_db/
+rag/chroma_db/
+data/sessions/
+*.pdf
+.env
+.venv
+venv/
+*.log

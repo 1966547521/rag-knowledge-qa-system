@@ -1,1 +1,3 @@
 external_data_path: data/external/records.csv
+# amap_key: 已迁移至环境变量 AMAP_KEY，留空则读取此处配置
+amap_key: ""
